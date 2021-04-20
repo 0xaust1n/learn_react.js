@@ -1,14 +1,18 @@
-import CommentDetail from './CommentDetail';
-import ApprovalCard from './ApprovalCard';
+import React from 'react';
+//Class Base Component
+class App extends React.Component {
+	render() {
+		window.navigator.geolocation.getCurrentPosition(
+			(position) => {
+				console.log(position);
+			},
+			(err) => {
+				console.log(err);
+			}
+		);
 
-const App = () => {
-	return (
-		<div className="ui container comments">
-			<ApprovalCard>
-				<CommentDetail author="Jon" content="Good Job" />
-			</ApprovalCard>
-		</div>
-	);
-};
+		return <div>Hello World!</div>;
+	}
+}
 
 export default App;
