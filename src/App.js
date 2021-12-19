@@ -1,18 +1,22 @@
 import React from 'react'
+import Clock from './Clock'
 //Class Base Component
 class App extends React.Component {
   render() {
-    window.navigator.geolocation.getCurrentPosition(
-      (position) => {
-        console.log(position)
-      },
-      (err) => {
-        console.log(err)
-      }
+    return (
+      <div>
+        <span>Hello {this.props.name}!</span>
+        <App2 name={this.props.name + '!'} />
+        <Clock />
+      </div>
     )
-
-    return <div>Hello World!</div>
   }
 }
+
+const App2 = (props) => {
+  return <div>Hello {props.name}!</div>
+}
+
+
 
 export default App
