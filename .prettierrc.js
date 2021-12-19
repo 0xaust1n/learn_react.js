@@ -13,13 +13,4 @@ module.exports = {
   trailingComma: 'es5',
   useTabs: false,
   useTabs: false,
-
-  overrides: [
-    {
-      files: esNextPaths,
-      options: {
-        trailingComma: 'all',
-      },
-    },
-  ],
 };
