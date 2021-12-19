@@ -1,11 +1,25 @@
 'use strict'
 
+
 module.exports = {
-  arrowParens: 'always',
+  bracketSpacing: false,
   endOfLine: 'lf',
-  printWidth: 120,
-  singleQuote: true,
+  jsxBracketSameLine: true,
+  parser: 'babel',
+  printWidth: 80,
   semi: false,
+  singleQuote: true,
   tabWidth: 2,
-  useTabs: false
-}
+  trailingComma: 'es5',
+  useTabs: false,
+  useTabs: false,
+
+  overrides: [
+    {
+      files: esNextPaths,
+      options: {
+        trailingComma: 'all',
+      },
+    },
+  ],
+};
