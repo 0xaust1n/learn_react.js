@@ -18,7 +18,8 @@ class Clock extends react.Component {
   updateTime = () => {
     this.setState({
       date: new Date()
-    })
+      }
+    )
   }
 
   render() {
