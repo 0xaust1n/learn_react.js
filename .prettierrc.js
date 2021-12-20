@@ -10,7 +10,7 @@ module.exports = {
   semi: false,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: 'never',
+  trailingComma: 'none',
   useTabs: false,
   useTabs: false,
 };
